@@ -71,8 +71,18 @@ The experiments pointed to the decoder being the arcitecture that achieved the l
 title="qualitative results">
 <img align="right" width="50%" src="readme_images/survey_results_patient.png" alt="qualitative results"
 title="qualitative results"><br>
-Fig.6: Diagrams reporting the results for the phantom survey (left) and patient survey (right). Scorers rated each simulated image on a 5 point scale (range 0-4) scale ranging from very low image quality to very good image quality. Each diagram reports the ratings of each architecture as mean ± standard deviation between scorers, where the latter is represented as a vertical error bar. It is evident that sonographers generally rated the images to have lower quality respect to imaging professionals. This discrepancy is not taken as a weakness of the test but, on the other hand, it will be used to assess the simulators for their different purposes which may be better judged by either category. Again, note the significantly better performance of the models on real-patient data.
+Fig. 6: Diagrams reporting the results for the phantom survey (left) and patient survey (right). Scorers rated each simulated image on a 5 point scale (range 0-4) scale ranging from very low image quality to very good image quality. Each diagram reports the ratings of each architecture as mean ± standard deviation between scorers, where the latter is represented as a vertical error bar. It is evident that sonographers generally rated the images to have lower quality respect to imaging professionals. This discrepancy is not taken as a weakness of the test but, on the other hand, it will be used to assess the simulators for their different purposes which may be better judged by either category. Again, note the significantly better performance of the models on real-patient data.
 
+<img align="left" width="50%" src="readme_images/some_images_phantom.png" alt="qualitative results"
+title="qualitative results">
+<img align="right" width="50%" src="readme_images/some_images_patient.png" alt="qualitative results"
+title="qualitative results"><br>
+Fig. 7: Ten examples of simulated phantom (top) and real-patient (bottom) images for each architecture, using tracking data from the test set. The top row shows the original images, and the rows 2, 3, 4 and 5 show the simulations using the Decoder, Pre-trained Decoder, Autoencoder and the Variational Autoencoder respectively. Shadowing and reverberation artifacts are highlighted respectively with light blue and pink dashed contour lines for the original images (top row) to allow comparison of such artifacts with the simulated images. The highlighted column in the phantom image shows an example where autoencoders tend to produce wrong high quality images, possibly due to over-fitting.
+
+
+<img width="95%" src="readme_images/interpolation.png" alt="qualitative results"
+title="qualitative results"><br>
+Fig. 8: Diagrams reporting five illustrative examples of simulated phantom images from tracking data coming from the test set. On the lest we show results of the networks trained on the full dataset and on the right the same networks trained on the dataset after removing a specific region of data. For each diagram the top row contains the original images, the second row contains images simulated by the Decoder, the third row contains images simulated by the Pretrained Decoder architecture, the fourth row contains images simulated by the Autoencoder architecture and bottom row contains images simulated by the Variational Autoencoder architecture. All views have been sampled from the region removed from the data, allowing to visualize the drop in image quality, the variational autoencoder seems to suffer the least.
 
 
 
