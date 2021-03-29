@@ -17,9 +17,9 @@ The current outcome of this project (unpublished repository, waiting for journal
 **Dataset** <br><br>
 Data consisted of tracked US images using an EM tracker, both for a phantom and real patient images. The image belows better explanes the way we collected data.
 
-<p align="center">
-<img src="readme_images/EM_system.png" alt="dataset acquisition"
-	title="dataset acquisition" align="center" width="600" height="300" >
+<p align="center" width="100%">
+    <img width="45%" src="readme_images/EM_system.png" alt="dataset acquisition"
+	title="dataset acquisition"> 
 </p><br><br>
 
 **Models**<br><br>
