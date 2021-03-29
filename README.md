@@ -27,14 +27,13 @@ Data consisted of tracked US images using an EM tracker. We let professional son
 </div><br><br>
 
 **Models**<br><br>
-Three main architectures were exprored, which are summarized in the diagrams below.<br>
-The first one was a simple decoder which maps the input 7D tensor (X,Y,Z coordinates + inclination angles transformed to a 4D quaternion) through a series of linear and convolutional layers, trained via MSE minimisation between the output and GT images. The second one is an autoencoder, which mirrors the decoder to obtain an encoder-decoder architecture, trained via MSE on both the images and the 7D latent latemt space. The last trained architecture was a VAE, which introduces a stochastic sampling of the latent variable allowing the model for better generalisation.
+Three main architectures were exprored, which are summarized in the diagrams below. The first one was a simple decoder which maps the input 7D tensor (X,Y,Z coordinates + inclination angles transformed to a 4D quaternion) through a series of linear and convolutional layers, trained via MSE minimisation between the output and GT images. The second one is an autoencoder, which mirrors the decoder to obtain an encoder-decoder architecture, trained via MSE on both the images and the 7D latent latemt space. The last trained architecture was a VAE, which introduces a stochastic sampling of the latent variable allowing the model for better generalisation.
 <div align="center">
 	<img src="readme_images/decoder.png" alt="decoder"
 	title="decoder"  width="550" height="250" ><br>
 	Fig 3: Diagram showing the decoder architecture.
 </div><br>
-<div align="left>
+<div align="left">
 	<img style="float: left;" src="readme_images/autoencoder.png" alt="autoencoder"
 	title="autoencoder"  width="550" height="300" ><br>
 	Fig 4: Diagram showing the autoencoder architecture.
@@ -44,6 +43,15 @@ The first one was a simple decoder which maps the input 7D tensor (X,Y,Z coordin
 	title="variational autoencoder"  width="550" height="300" ><br>
 	Fig 5: Diagram showing the variational autoencoder architecture.
 </div>
+
+## Experiments & results
+
+Two main types of experiments were conducted:
+
+1. Achieved image quality was measured both quantitatively and qualitatively through user rated surveys and image similarity algorithms.
+2. Interpolation capabilities were assessed by removing part of the training data in a specific location and measuring the relative drop in performance when inferring samples within the removed region.
+
+The experiments pointed to the decoder being the arcitecture that achieved the lowest absolute error and the top image quality (closely followed by the variational autoencoder for real patient images). This can be explained by the fact that the decoder is the only architecture that directly optimizes the mapping from tracked coordinates to US images, wheras the other two architectures optimize the mapping from original image to simulated image. The variational autoencoder however proved to have stronger interpolating abilities, yielding a lower relative drop in performance within the deleted region and simulating higher quality images in this region. Future work aimed at improving image quality using GAN, while retaining image content (we do not want high quality samples showing the wrong structures). The figures below illustrate the results we discussed.
 
 
 
