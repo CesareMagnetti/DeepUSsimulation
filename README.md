@@ -70,17 +70,12 @@ The experiments pointed to the decoder being the arcitecture that achieved the l
 <div align="left" witdh="50%">
 	<img width="50%" src="readme_images/survey_results_phantom.png" alt="qualitative results"
 	title="qualitative results">
-	(a) Distributions of the given ratings by the overall scorers (bottom diagram) sonographer
-	scorers only (middle diagram) and computational imaging professional scorers only (top diagram)
-	for the phantom survey.
 </div>
 <div align="right" witdh="50%">
 	<img width="50%" src="readme_images/survey_results_patient.png" alt="qualitative results"
 	title="qualitative results">
-	(b) Distributions of the given ratings by the overall scorers (bottom diagram) sonographer scorers
-	only (middle diagram) and computational imaging professional scorers only (top diagram) for the
-	patient survey.
 </div><br>
+Fig.6: Diagrams reporting the results for the phantom survey (left) and patient survey (right). Scorers rated each simulated image on a 5 point scale (range 0-4) scale ranging from very low image quality to very good image quality. Each diagram reports the ratings of each architecture as mean ± standard deviation between scorers, where the latter is represented as a vertical error bar. It is evident that sonographers generally rated the images to have lower quality respect to imaging professionals. This discrepancy is not taken as a weakness of the test but, on the other hand, it will be used to assess the simulators for their different purposes which may be better judged by either category. Again, note the significantly better performance of the models on real-patient data.
 
 
 
