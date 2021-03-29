@@ -20,6 +20,7 @@ Data consisted of tracked US images using an EM tracker, both for a phantom and 
 <p align="center" width="100%">
     <img width="45%" src="readme_images/EM_system.png" alt="dataset acquisition"
 	title="dataset acquisition"> 
+	Fig.2: set up for dataset acquisition, showing how we used the EM tracker to label our images.<br>
 </p><br><br>
 
 **Models**<br><br>
