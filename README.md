@@ -78,7 +78,8 @@ Fig. 6: Diagrams reporting the results for the phantom survey (left) and patient
 <img align="left" width="48%" src="readme_images/some_images_phantom.png" alt="qualitative results"
 title="qualitative results">
 <img align="right" width="48%" src="readme_images/some_images_patient.png" alt="qualitative results"
-title="qualitative results"><br><br>
+title="qualitative results">
+<br>
 Fig. 7: Ten examples of simulated phantom (top) and real-patient (bottom) images for each architecture, using tracking data from the test set. The top row shows the original images, and the rows 2, 3, 4 and 5 show the simulations using the Decoder, Pre-trained Decoder, Autoencoder and the Variational Autoencoder respectively. Shadowing and reverberation artifacts are highlighted respectively with light blue and pink dashed contour lines for the original images (top row) to allow comparison of such artifacts with the simulated images. The highlighted column in the phantom image shows an example where autoencoders tend to produce wrong high quality images, possibly due to over-fitting.<br><br>
 
 
