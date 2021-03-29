@@ -12,7 +12,7 @@ The current outcome of this project (unpublished repository, waiting for journal
 <div align="center">
     <img align="right" width="400" height="200" src="readme_images/readme_trajectory.gif", alt="left: sarbitrary US phantom trajectory. right: simulation."
 	title="left: sarbitrary US phantom trajectory. right: simulation." >
-</div>
+</div><br>
 
 ## Dataset
 Data consisted of tracked US images using an EM tracker, both for a phantom and real patient images. The image belows better explanes the way we collected data.
