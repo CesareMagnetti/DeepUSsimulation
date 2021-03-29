@@ -17,12 +17,10 @@ The current outcome of this project (unpublished repository, waiting for journal
 **Dataset** <br><br>
 Data consisted of tracked US images using an EM tracker, both for a phantom and real patient images. The image belows better explanes the way we collected data.
 
-<p align="center" width="100%">
+<div align="center" width="100%">
     <img width="45%" src="readme_images/EM_system.png" alt="dataset acquisition"
 	title="dataset acquisition"> 
-	Fig.2: set up for dataset acquisition, showing how we used the EM tracker<br>
-	to label our images.<br>
-</p><br><br>
+</div><br><br>
 
 **Models**<br><br>
 Three main architectures were exprored, which are summarized in the diagrams below.<br>
