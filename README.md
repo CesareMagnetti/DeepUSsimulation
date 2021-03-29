@@ -12,6 +12,7 @@ The current outcome of this project (unpublished repository, waiting for journal
 <div align="center">
     <img width="40%" src="readme_images/readme_trajectory.gif", alt="left: sarbitrary US phantom trajectory. right: simulation."
 	title="left: sarbitrary US phantom trajectory. right: simulation." >
+	Fig 1: on the left we have the original trajectory, on the right we have the simulated trajectory which takes the US probe coordinates and inclination as an input, this state of results is sill in an unpublished repository, waiting for journal publication approval.
 </div>
 
 ## Dataset
