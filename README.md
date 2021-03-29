@@ -18,7 +18,7 @@ Three main architectures were exprored, which are summarized in the diagrams bel
 The first one was a simple decoder which maps the input 7D tensor (X,Y,Z coordinates + inclination angles transformed to a 4D quaternion) through a series of linear and convolutional layers, trained via MSE minimisation between the output and GT images. 
 
 <img src="readme_images/decoder.png" alt="dataset acquisition"
-	title="dataset acquisition" align="center" width="500" height="250" /><br>
+	title="dataset acquisition" align="center" width="600" height="250" /><br>
 
 The second one is an autoencoder, which mirrors the decoder to obtain an encoder-decoder architecture, trained via MSE
 
