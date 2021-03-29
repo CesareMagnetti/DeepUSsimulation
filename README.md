@@ -33,14 +33,13 @@ Three main architectures were exprored, which are summarized in the diagrams bel
 	title="decoder" ><br>
 	Fig 3: Diagram showing the decoder architecture.
 </div><br>
-<div align="left" witdh="45%">
-	<img width="45%" src="readme_images/autoencoder.png" alt="autoencoder"
-	title="autoencoder">
-</div>
-<div align="right" witdh="45%">
-	<img width="45%" src="readme_images/variational_autoencoder.png" alt="variational autoencoder"
-	title="variational autoencoder">
-</div>
+
+<img align="left" width="45%" src="readme_images/autoencoder.png" alt="autoencoder"
+title="autoencoder">
+
+<img align="right" width="45%" src="readme_images/variational_autoencoder.png" alt="variational autoencoder"
+title="variational autoencoder">
+
 
 
 ## Experiments & results
