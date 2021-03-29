@@ -22,20 +22,28 @@ Data consisted of tracked US images using an EM tracker. We let professional son
 
 <div align="center">
     <img width="45%" src="readme_images/EM_system.png" alt="dataset acquisition"
-	title="dataset acquisition"> 
+	title="dataset acquisition"><br>
+	Fig 2: Diagram showing the method we adopted to label the US images with their tracked location.
 </div><br><br>
 
 **Models**<br><br>
 Three main architectures were exprored, which are summarized in the diagrams below.<br>
 The first one was a simple decoder which maps the input 7D tensor (X,Y,Z coordinates + inclination angles transformed to a 4D quaternion) through a series of linear and convolutional layers, trained via MSE minimisation between the output and GT images. The second one is an autoencoder, which mirrors the decoder to obtain an encoder-decoder architecture, trained via MSE on both the images and the 7D latent latemt space. The last trained architecture was a VAE, which introduces a stochastic sampling of the latent variable allowing the model for better generalisation.
 <div align="center">
-<img src="readme_images/decoder.png" alt="decoder"
-	title="decoder"  width="550" height="250" >
+	<img src="readme_images/decoder.png" alt="decoder"
+	title="decoder"  width="550" height="250" ><br>
+	Fig 3: Diagram showing the decoder architecture.
 </div><br>
-<img style="float: left;" src="readme_images/autoencoder.png" alt="autoencoder"
-	title="autoencoder"  width="550" height="300" >
-<img style="float: right;" src="readme_images/variational_autoencoder.png" alt="variational autoencoder"
-	title="variational autoencoder"  width="550" height="300" >
+<div align="left>
+	<img style="float: left;" src="readme_images/autoencoder.png" alt="autoencoder"
+	title="autoencoder"  width="550" height="300" ><br>
+	Fig 4: Diagram showing the autoencoder architecture.
+</div>
+<div align="right">
+	<img style="float: right;" src="readme_images/variational_autoencoder.png" alt="variational autoencoder"
+	title="variational autoencoder"  width="550" height="300" ><br>
+	Fig 5: Diagram showing the variational autoencoder architecture.
+</div>
 
 
 
