@@ -14,9 +14,7 @@ The current outcome of this project (unpublished repository, waiting for journal
 	title="left: sarbitrary US phantom trajectory. right: simulation." >
 </div>
 
-<br><br><br><br>
-
-**Dataset** <br><br>
+## Dataset
 Data consisted of tracked US images using an EM tracker, both for a phantom and real patient images. The image belows better explanes the way we collected data.
 
 <div align="center">
