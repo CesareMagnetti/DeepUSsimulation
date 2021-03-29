@@ -15,7 +15,7 @@ The current outcome of this project (unpublished repository, waiting for journal
 </div>
 
 ## Dataset
-Data consisted of tracked US images using an EM tracker, both for a phantom and real patient images. The image belows better explanes the way we collected data.
+Data consisted of tracked US images using an EM tracker. We let professional sonographers perform regular fetal ecographies both on real patients and a synthetic phantom. The image belows better explanes the way we collected data.
 
 <div align="center">
     <img width="45%" src="readme_images/EM_system.png" alt="dataset acquisition"
@@ -25,10 +25,10 @@ Data consisted of tracked US images using an EM tracker, both for a phantom and 
 **Models**<br><br>
 Three main architectures were exprored, which are summarized in the diagrams below.<br>
 The first one was a simple decoder which maps the input 7D tensor (X,Y,Z coordinates + inclination angles transformed to a 4D quaternion) through a series of linear and convolutional layers, trained via MSE minimisation between the output and GT images. The second one is an autoencoder, which mirrors the decoder to obtain an encoder-decoder architecture, trained via MSE on both the images and the 7D latent latemt space. The last trained architecture was a VAE, which introduces a stochastic sampling of the latent variable allowing the model for better generalisation.
-<p align="center">
+<div align="center">
 <img src="readme_images/decoder.png" alt="decoder"
 	title="decoder"  width="550" height="250" >
-</p><br>
+</div><br>
 <img style="float: left;" src="readme_images/autoencoder.png" alt="autoencoder"
 	title="autoencoder"  width="550" height="300" >
 <img style="float: right;" src="readme_images/variational_autoencoder.png" alt="variational autoencoder"
