@@ -15,21 +15,19 @@ Clone this repository to your local machine as:
 git clone git@gitlab.com:cesare.magnetti/BEng_project.git
 ```
 
-## Usage
+You will also need to install specific python packages:
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```bash
+pip install -r requirements.txt
 ```
 
+## Usage
+
+unfortunately this project was not optimized for user experience, therefore if you want to play around with it you will need to do quite some changes to the code, specifically you will want to change these files: ```./scripts/train_decore.py``` ```./scripts/train_autoencoder.py``` ```./scripts/train_variational.py```. Additionally, due to patient regulations, i was denied the permission to upload the data used for training, so there will be little for you to experiment with, other than inspecting the code.
+
+## Acknowledgements
+I would like to thank my supervisors Prof. Julia Schnabel <mailto:julia.schnabel@kcl.ac.uk> and Dr. Alberto Gomez <mailto:alberto.gomez@kcl.ac.uk>
+
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+@cesare.magnetti
 
