@@ -10,7 +10,7 @@ This work will allow better clinician training to reduce the high variance of fe
 The current outcome of this project (unpublished repository, waiting for journal publication approval) uses generative adversarial networks (GANs) coupled with a perpceptual loss function (LPIPS) to achieve the below simulated trajectory. As you can note the sequence is quite jumpy, this is because no time correlation was taken into account up to now, future work will incorporate time information by integrating the current models with an LSTM or transformer to get smoother trajectories. Current results are only using a one to one mapping between tracker information and output image, disregarding all the time relationships between successive frames.
 
 <animation align="center">
-    <img align="right" width="400" height="200" src="/images/readme_trajectory.gif", alt="left: sarbitrary US phantom trajectory. right: simulation." />
+    <img align="right" width="400" height="200" src="readme_images/readme_trajectory.gif", alt="left: sarbitrary US phantom trajectory. right: simulation." />
     <figcaption>left: arbitrary US phantom trajectory. right: simulation.</figcaption>
 </animation>
 
