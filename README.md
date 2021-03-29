@@ -34,11 +34,19 @@ Three main architectures were exprored, which are summarized in the diagrams bel
 	Fig 3: Diagram showing the decoder architecture.
 </div><br>
 
-<img align="left" width="45%" src="readme_images/autoencoder.png" alt="autoencoder"
+<img align="left" width="50%" src="readme_images/autoencoder.png" alt="autoencoder"
 title="autoencoder">
 
-<img align="right" width="45%" src="readme_images/variational_autoencoder.png" alt="variational autoencoder"
+<img align="right" width="50%" src="readme_images/variational_autoencoder.png" alt="variational autoencoder"
 title="variational autoencoder">
+
+<br>
+<div align="left" witdh="50%">
+	Fig 4: Diagram showing the autoencoder architecture.
+</div>
+<div align="right" witdh="50%">
+	Fig 5: Diagram showing the variational autoencoder architecture.
+</div>
 
 
 
