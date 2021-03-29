@@ -7,6 +7,14 @@ The project consisted in the development of a patient specific ultrasound (US) s
 
 This work will allow better clinician training to reduce the high variance of fetal US diagnosis, which is one of the leading causes of prenatal death. Furthermore, the fact that the method is patient specific, meaning that all training data comes from the same patient, allows for retrospective analysis of complex anomalies and rare illnessness. These are currently only spotted in a clinical setting, leading to the clinician expertise being highly dependent on the repertoire of cases they saw throughout their career, explaining the high variance in prenatal diagnosis. 
 
+**Dataset**
+Data consisted of tracked US images using an EM tracker, both for a phantom and real patient images. The image belows better explanes the way we collected data.
+
+![alt text](readme_images/EM_system.png "dataset acquisition")<br><br>
+
+**Models**
+Three main architectures were exprored, which are summarized in the diagrams below. The first one was a simple decoder which maps the input 7D tensor (X,Y,Z coordinates + inclination angles transformed to a 4D quaternion) through a series of linear and convolutional layers, trained via MSE minimisation between the output and GT images. The second one is an autoencoder, which mirrors the decoder to obtain an encoder-decoder architecture, trained via MSE
+
 ## Installation
 
 Clone this repository to your local machine as:
