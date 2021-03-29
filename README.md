@@ -11,7 +11,7 @@ This work will allow better clinician training to reduce the high variance of fe
 Data consisted of tracked US images using an EM tracker, both for a phantom and real patient images. The image belows better explanes the way we collected data.
 
 <img src="readme_images/EM_system.png" alt="dataset acquisition"
-	title="dataset acquisition" align="center" width="600" height="400" /><br>
+	title="dataset acquisition" align="center" width="800" height="400" /><br>
 
 **Models**
 Three main architectures were exprored, which are summarized in the diagrams below. The first one was a simple decoder which maps the input 7D tensor (X,Y,Z coordinates + inclination angles transformed to a 4D quaternion) through a series of linear and convolutional layers, trained via MSE minimisation between the output and GT images. The second one is an autoencoder, which mirrors the decoder to obtain an encoder-decoder architecture, trained via MSE
