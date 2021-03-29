@@ -18,11 +18,11 @@ Three main architectures were exprored, which are summarized in the diagrams bel
 The first one was a simple decoder which maps the input 7D tensor (X,Y,Z coordinates + inclination angles transformed to a 4D quaternion) through a series of linear and convolutional layers, trained via MSE minimisation between the output and GT images. The second one is an autoencoder, which mirrors the decoder to obtain an encoder-decoder architecture, trained via MSE on both the images and the 7D latent latemt space. The last trained architecture was a VAE, which introduces a stochastic sampling of the latent variable allowing the model for better generalisation.
 
 <img align="left" src="readme_images/decoder.png" alt="dataset acquisition"
-	title="dataset acquisition"  width="600" height="250" />
+	title="dataset acquisition"  width="500" height="250" />
 <img align="right" src="readme_images/autoencoder.png" alt="dataset acquisition"
-	title="dataset acquisition"  width="600" height="400" /><br>
+	title="dataset acquisition"  width="500" height="300" /><br>
 <img align="center" src="readme_images/variational_autoencoder.png" alt="dataset acquisition"
-	title="dataset acquisition"  width="600" height="400" />
+	title="dataset acquisition"  width="500" height="300" />
 
 
 
