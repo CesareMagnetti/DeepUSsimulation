@@ -46,7 +46,16 @@ title="autoencoder">
 <img align="right" width="50%" src="readme_images/variational_autoencoder.png" alt="variational autoencoder"
 title="variational autoencoder">
 
-<div align="center" witdh="50%">
+## Experiments & results
+
+Two main types of experiments were conducted:
+
+1. Achieved image quality was measured both quantitatively and qualitatively through user rated surveys and image similarity algorithms. Survey scorers comprised of a cohort of expert sonographers and computational imaging professionals in the field of fetal ultrasound imaging.
+2. Interpolation capabilities were assessed by removing part of the training data in a specific location and measuring the relative drop in performance when inferring samples within the removed region.
+
+The experiments pointed to the decoder being the arcitecture that achieved the lowest absolute error and the top image quality (closely followed by the variational autoencoder for real patient images). This can be explained by the fact that the decoder is the only architecture that directly optimizes the mapping from tracked coordinates to US images, wheras the other two architectures optimize the mapping from original image to simulated image. The variational autoencoder however proved to have stronger interpolating abilities, yielding a lower relative drop in performance within the deleted region and simulating higher quality images in this region. Future work aimed at improving image quality using GAN, while retaining image content (we do not want high quality samples showing the wrong structures). The figures below illustrate the results we discussed.
+
+<div align="center" witdh="75%">
 	Table 1: Tabulated results of the survey experiments on each architecture, both phantom and real-patient<br>
 	results are reported for each table. a): overall results of the survey. b)&c): itra-observer analysis between<br>
 	results of sonographers and computational imaging professionals. Note that results vary by a significant degree <br>
@@ -57,17 +66,6 @@ title="variational autoencoder">
 	<img width="50%" src="readme_images/tabled_results.png" alt="qualitative results"
 	title="decoder" >	
 </div><br>
-
-
-
-## Experiments & results
-
-Two main types of experiments were conducted:
-
-1. Achieved image quality was measured both quantitatively and qualitatively through user rated surveys and image similarity algorithms.
-2. Interpolation capabilities were assessed by removing part of the training data in a specific location and measuring the relative drop in performance when inferring samples within the removed region.
-
-The experiments pointed to the decoder being the arcitecture that achieved the lowest absolute error and the top image quality (closely followed by the variational autoencoder for real patient images). This can be explained by the fact that the decoder is the only architecture that directly optimizes the mapping from tracked coordinates to US images, wheras the other two architectures optimize the mapping from original image to simulated image. The variational autoencoder however proved to have stronger interpolating abilities, yielding a lower relative drop in performance within the deleted region and simulating higher quality images in this region. Future work aimed at improving image quality using GAN, while retaining image content (we do not want high quality samples showing the wrong structures). The figures below illustrate the results we discussed.
 
 
 
