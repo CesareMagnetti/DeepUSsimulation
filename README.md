@@ -29,9 +29,9 @@ Data consisted of tracked US images using an EM tracker. We let professional son
 **Models**<br><br>
 Three main architectures were exprored, which are summarized in the diagrams below. The first one was a simple decoder which maps the input 7D tensor (X,Y,Z coordinates + inclination angles transformed to a 4D quaternion) through a series of linear and convolutional layers, trained via MSE minimisation between the output and GT images. The second one is an autoencoder, which mirrors the decoder to obtain an encoder-decoder architecture, trained via MSE on both the images and the 7D latent latemt space. The last trained architecture was a VAE, which introduces a stochastic sampling of the latent variable allowing the model for better generalisation.
 <div align="center" witdh="50%">
-	Fig 3: Diagram showing the decoder architecture.
+	Fig 3: Diagram showing the decoder architecture.<br>
 	<img width="50%" src="readme_images/decoder.png" alt="decoder"
-	title="decoder" ><br>	
+	title="decoder" >	
 </div><br>
 
 <div align="left" witdh="50%">
@@ -46,6 +46,17 @@ title="autoencoder">
 <img align="right" width="50%" src="readme_images/variational_autoencoder.png" alt="variational autoencoder"
 title="variational autoencoder">
 
+<div align="center" witdh="50%">
+	Table 1: Tabulated results of the survey experiments on each architecture, both phantom and real-patient<br>
+	results are reported for each table. a): overall results of the survey. b)&c): itra-observer analysis between<br>
+	results of sonographers and computational imaging professionals. Note that results vary by a significant degree <br>
+	between b) and c), indicating the different abilities of each scorer at particular tasks. Scorers were asked to <br>
+	indicate if they could recognise the organs or structures contained in the simulated images. Each tabulated result <br>
+	is reported as mean±standard deviation to emphasize the variability between scorers and the best scores are<br>
+	highlighted in bold. Note that results are significantly better for real-patient data.<br>
+	<img width="50%" src="readme_images/tabled_results.png" alt="qualitative results"
+	title="decoder" >	
+</div><br>
 
 
 
@@ -57,6 +68,8 @@ Two main types of experiments were conducted:
 2. Interpolation capabilities were assessed by removing part of the training data in a specific location and measuring the relative drop in performance when inferring samples within the removed region.
 
 The experiments pointed to the decoder being the arcitecture that achieved the lowest absolute error and the top image quality (closely followed by the variational autoencoder for real patient images). This can be explained by the fact that the decoder is the only architecture that directly optimizes the mapping from tracked coordinates to US images, wheras the other two architectures optimize the mapping from original image to simulated image. The variational autoencoder however proved to have stronger interpolating abilities, yielding a lower relative drop in performance within the deleted region and simulating higher quality images in this region. Future work aimed at improving image quality using GAN, while retaining image content (we do not want high quality samples showing the wrong structures). The figures below illustrate the results we discussed.
+
+
 
 
 
