@@ -70,10 +70,16 @@ The experiments pointed to the decoder being the arcitecture that achieved the l
 <div align="left" witdh="50%">
 	<img width="50%" src="readme_images/survey_results_phantom.png" alt="qualitative results"
 	title="qualitative results">
-</div><br>
+	(a) Distributions of the given ratings by the overall scorers (bottom diagram) sonographer
+	scorers only (middle diagram) and computational imaging professional scorers only (top diagram)
+	for the phantom survey.
+</div>
 <div align="right" witdh="50%">
 	<img width="50%" src="readme_images/survey_results_patient.png" alt="qualitative results"
 	title="qualitative results">
+	(b) Distributions of the given ratings by the overall scorers (bottom diagram) sonographer scorers
+	only (middle diagram) and computational imaging professional scorers only (top diagram) for the
+	patient survey.
 </div><br>
 
 
