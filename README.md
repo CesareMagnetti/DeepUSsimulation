@@ -35,12 +35,17 @@ Three main architectures were exprored, which are summarized in the diagrams bel
 </div><br>
 <div align="left" witdh="50%">
 	<img width="48%" src="readme_images/autoencoder.png" alt="autoencoder"
-	title="autoencoder"" ><br>
-	Fig 4: Diagram showing the autoencoder architecture.
+	title="autoencoder">
 </div>
 <div align="right" witdh="50%">
 	<img width="48%" src="readme_images/variational_autoencoder.png" alt="variational autoencoder"
-	title="variational autoencoder"><br>
+	title="variational autoencoder">
+</div>
+<br>
+<div align="left" witdh="50%">
+	Fig 4: Diagram showing the autoencoder architecture.
+</div>
+<div align="right" witdh="50%">
 	Fig 5: Diagram showing the variational autoencoder architecture.
 </div>
 
