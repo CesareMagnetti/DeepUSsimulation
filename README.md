@@ -55,7 +55,9 @@ Two main types of experiments were conducted:
 
 The experiments pointed to the decoder being the arcitecture that achieved the lowest absolute error and the top image quality (closely followed by the variational autoencoder for real patient images). This can be explained by the fact that the decoder is the only architecture that directly optimizes the mapping from tracked coordinates to US images, wheras the other two architectures optimize the mapping from original image to simulated image. The variational autoencoder however proved to have stronger interpolating abilities, yielding a lower relative drop in performance within the deleted region and simulating higher quality images in this region. Future work aimed at improving image quality using GAN, while retaining image content (we do not want high quality samples showing the wrong structures). The figures below illustrate the results we discussed.
 
-<div align="center" witdh="75%">
+<div align="center" witdh="70%">
+	<img width="50%" src="readme_images/tabled_results.png" alt="qualitative results"
+	title="qualitative results"><br>
 	Table 1: Tabulated results of the survey experiments on each architecture, both phantom and real-patient<br>
 	results are reported for each table. a): overall results of the survey. b)&c): itra-observer analysis between<br>
 	results of sonographers and computational imaging professionals. Note that results vary by a significant degree <br>
@@ -63,8 +65,15 @@ The experiments pointed to the decoder being the arcitecture that achieved the l
 	indicate if they could recognise the organs or structures contained in the simulated images. Each tabulated result <br>
 	is reported as mean±standard deviation to emphasize the variability between scorers and the best scores are<br>
 	highlighted in bold. Note that results are significantly better for real-patient data.<br>
-	<img width="50%" src="readme_images/tabled_results.png" alt="qualitative results"
-	title="decoder" >	
+</div><br>
+
+<div align="left" witdh="50%">
+	<img width="50%" src="readme_images/survey_results_phantom.png" alt="qualitative results"
+	title="qualitative results">
+</div><br>
+<div align="right" witdh="50%">
+	<img width="50%" src="readme_images/survey_results_patient.png" alt="qualitative results"
+	title="qualitative results">
 </div><br>
 
 
