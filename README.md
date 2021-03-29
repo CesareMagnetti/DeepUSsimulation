@@ -41,10 +41,10 @@ title="autoencoder">
 title="variational autoencoder">
 
 <br>
-<div align="left" witdh="50%">
+<div align="left" witdh="48%">
 	Fig 4: Diagram showing the autoencoder architecture.
 </div>
-<div align="right" witdh="50%">
+<div align="right" witdh="46%">
 	Fig 5: Diagram showing the variational autoencoder architecture.
 </div>
 
